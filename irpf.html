@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Calculadora de IRPF 2026: cuánto pagas y tipo efectivo</title><meta name="description" content="Calcula el IRPF de tu sueldo con el desglose por tramos, tu tipo efectivo y tu tipo marginal."><link rel="stylesheet" href="style.css"></head><body><header class="w top"><a class="logo" href="index.html">Calculadoras</a><nav><a href="hipoteca.html">Hipoteca</a><a href="nomina.html">Nómina</a><a href="irpf.html">IRPF</a></nav></header><main class="w">
+<h1>Calculadora de IRPF</h1>
+<p>Estima cuánto IRPF pagas al año por tu sueldo y cómo se reparte entre los tramos de la escala.</p>
+<section class="card"><div class="grid">
+<div><label for="i1">Sueldo bruto anual (€)</label><input id="i1" type="number" value="30000" inputmode="decimal"></div>
+<div><label for="i4">Hijos a cargo</label><input id="i4" type="number" value="0" min="0" inputmode="numeric"></div>
+<div><label for="i3">Contrato</label><select id="i3"><option value="0">Indefinido</option><option value="1">Temporal</option></select></div>
+<div><label for="i5">¿Tienes más de 65 años?</label><select id="i5"><option value="0">No</option><option value="1">Sí</option></select></div>
+</div><div class="res" id="ir"></div><div class="sc"><table id="it"></table></div></section>
+<div class="ad" data-slot="0000000000"></div>
+<h2>Cómo se calcula el IRPF</h2>
+<p>Partimos del sueldo bruto y restamos las cotizaciones a la Seguridad Social, 2.000 € de otros gastos deducibles y, si tu sueldo es bajo, una reducción por rendimientos del trabajo. El resultado es la base sujeta a la escala. Se aplica la escala por tramos (aquí, una combinación estatal y autonómica que va del 19 % al 47 %) y se resta lo que correspondería al mínimo personal y familiar (5.550 € más los incrementos por edad e hijos).</p>
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Qué es el tipo marginal y el tipo efectivo?</summary><p>El marginal es el porcentaje que se aplica al último euro que ganas, el del tramo más alto en el que caes. El efectivo es el IRPF total dividido entre tu sueldo bruto, y siempre es menor que el marginal.</p></details>
+<details><summary>¿Si subo de tramo, pagaré más por todo mi sueldo?</summary><p>No. Cada tipo se aplica solo a la parte de la base que cae dentro de su tramo. Un aumento de sueldo nunca te deja con menos neto por pasar de tramo.</p></details>
+<details><summary>¿Es lo mismo en todas las comunidades?</summary><p>No. El tramo estatal es común, pero cada comunidad autónoma fija el suyo, así que la cuota real puede variar. Esta calculadora usa una escala combinada media y no tiene en cuenta deducciones autonómicas.</p></details>
+<details><summary>¿Qué es el mínimo personal y familiar?</summary><p>Es la parte de tus ingresos que la ley considera necesaria para vivir y que no tributa. El mínimo personal general es de 5.550 € al año, y aumenta si tienes más de 65 años o hijos a cargo.</p></details>
+</main><footer class="note"><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="#" id="cc">Gestionar cookies</a><p>Cálculos orientativos; no sustituyen el asesoramiento profesional.</p></footer><script src="calc.js"></script><script src="cookies.js"></script></body></html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Calculadora de hipoteca: cuota mensual e intereses</title><meta name="description" content="Calcula la cuota mensual de tu hipoteca, los intereses totales y el cuadro de amortización anual."><link rel="stylesheet" href="style.css"></head><body><header class="w top"><a class="logo" href="index.html">Calculadoras</a><nav><a href="hipoteca.html">Hipoteca</a><a href="nomina.html">Nómina</a><a href="irpf.html">IRPF</a></nav></header><main class="w">
+<h1>Calculadora de hipoteca</h1>
+<p>Introduce el precio, tu aportación, el interés y el plazo para ver tu cuota mensual y cuánto pagarás en total.</p>
+<section class="card"><div class="grid">
+<div><label for="h1">Precio de la vivienda (€)</label><input id="h1" type="number" value="250000" inputmode="decimal"></div>
+<div><label for="h2">Ahorro aportado (%)</label><input id="h2" type="number" value="20" inputmode="decimal"></div>
+<div><label for="h3">Interés anual, TIN (%)</label><input id="h3" type="number" value="2.8" step="0.01" inputmode="decimal"></div>
+<div><label for="h4">Plazo (años)</label><input id="h4" type="number" value="30" inputmode="numeric"></div>
+</div><div class="res" id="hr"></div><div class="sc"><table id="ht"></table></div></section>
+<div class="ad" data-slot="0000000000"></div>
+<h2>Cómo se calcula la cuota de una hipoteca</h2>
+<p>La mayoría de hipotecas en España usan el sistema de amortización francés: la cuota mensual es constante, pero al principio casi toda va a intereses y con los años pasa a amortizar capital. La fórmula es cuota = C × i / (1 − (1 + i)<sup>−n</sup>), donde C es el capital prestado, i el interés mensual (TIN dividido entre 12) y n el número de cuotas.</p>
+<p>La tabla anual muestra cuántos intereses y cuánto capital pagas cada año, y cuánto te queda pendiente.</p>
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Qué diferencia hay entre TIN y TAE?</summary><p>El TIN es el interés nominal que se aplica a tu préstamo y es el que usa esta calculadora. La TAE añade al TIN las comisiones y otros gastos vinculados, y sirve para comparar ofertas entre bancos. La TAE siempre es igual o mayor que el TIN.</p></details>
+<details><summary>¿Cuánto tengo que aportar de entrada?</summary><p>Lo habitual es que el banco financie hasta el 80 % del menor valor entre tasación y compraventa, así que tendrás que aportar al menos el 20 % más los gastos de la operación (impuestos, notaría, registro y gestoría), que varían según la comunidad autónoma.</p></details>
+<details><summary>¿Hipoteca fija o variable?</summary><p>En la fija la cuota no cambia durante el plazo pactado. En la variable depende de un índice, normalmente el euríbor, y puede subir o bajar. Esta calculadora asume un tipo constante; si tu hipoteca es variable, el resultado es una estimación.</p></details>
+<details><summary>¿Cuánto debería pagar al mes como máximo?</summary><p>Una referencia habitual es que la cuota no supere entre el 30 % y el 35 % de tus ingresos netos mensuales. Los bancos aplican sus propios criterios.</p></details>
+</main><footer class="note"><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="#" id="cc">Gestionar cookies</a><p>Cálculos orientativos; no sustituyen el asesoramiento profesional.</p></footer><script src="calc.js"></script><script src="cookies.js"></script></body></html>
